@@ -12,11 +12,12 @@ This creates space for 10 characters (10 bytes).
 
 I can visualize it as 10 boxes:
 
+```
 ┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
 │    │    │    │    │    │    │    │    │    │    │
 └────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴
   0    1    2    3    4    5    6    7    8    9
-
+```
 buffer[0] is the first byte, buffer[1] is the second byte, etc.
 
 A buffer has a capacity and may contain less actual data than its full capacity.
