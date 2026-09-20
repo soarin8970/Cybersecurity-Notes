@@ -1,6 +1,6 @@
-Memory Basics: Buffers and Pointers
+**Memory Basics: Buffers and Pointers**
 
-1. What is a buffer?
+**1. What is a buffer?**
 
 A buffer is simply a region of memory used to temporarily store data.
 
@@ -12,12 +12,16 @@ This creates space for 10 characters (10 bytes).
 
 I can visualize it as 10 boxes:
 
+┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
+│    │    │    │    │    │    │    │    │    │    │
+└────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴
+  0    1    2    3    4    5    6    7    8    9
 
 buffer[0] is the first byte, buffer[1] is the second byte, etc.
 
 A buffer has a capacity and may contain less actual data than its full capacity.
 
-2. Memory addresses
+**2. Memory addresses**
 
 Every location in memory has an address. 
 
@@ -33,11 +37,11 @@ int x = 50;
 
 then value of x is 50 and &x is the address of x that is 1000
 
-3. & means "address of"
+**3. & means "address of"**
 
 &x means: Give me the memory address of x. So if x is stored at address 1000: x = 50 and &x = 1000
 
-4. Pointers
+**4. Pointers**
 
 A pointer is a variable that stores a memory address.
 
@@ -48,7 +52,7 @@ Here:
 
 the value of x is 50 and the address of x is p. It contains the address where 50 is stored.
 
-5. * means "follow the pointer"
+**5. * means "follow the pointer"**
 
 Once p contains the address of x:
 
@@ -81,7 +85,7 @@ p - I contain that address
 
 *p - Go to that address
 
-6. * has two uses
+**6. * has two uses**
 
 When declaring a pointer:
 
@@ -97,7 +101,7 @@ When using the pointer:
 
 the * means follow the pointer and access the value it points to.
 
-7. Pointer arithmetic
+**7. Pointer arithmetic**
 
 If:
  
@@ -123,7 +127,7 @@ p+5 does not mean add 5 to the data stored in the buffer.
 
 It means move the pointer 5 positions.
 
-8. Structures and .
+**8. Structures and .**
 
 A structure can contain several related pieces of data:
 
@@ -143,7 +147,7 @@ person.height
 
 The . means: Access a field directly inside the structure.
 
-9. -> means access a structure through a pointer
+**9. -> means access a structure through a pointer**
 
 If I have a pointer to the structure:
 
@@ -155,7 +159,7 @@ p->age means: Follow p to the structure, then access its age field.
 
 It is essentially a shorthand for (*p).age. So in person.age, person is the structure itself and in p->age, p is a pointer to the structure.
 
-10. Quick reference
+**10. Quick reference**
 
 &x - address of x
 p - address stored in pointer p
