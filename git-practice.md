@@ -2,8 +2,8 @@
 
 Today I learned how Git works.
 
-Git Command    What it is used for
------------    --------------------
+Commonly used git commands and what they are used for:
+
 - git clone  - To copy a GitHub repository to your computer
 - git status - To see what has changed
 - git add    - Tell Git what you want to save
